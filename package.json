@@ -1,18 +1,20 @@
 {
-  "name": "os-legal-webapp-roles-ai",
-  "version": "2.0.0",
+  "name": "os-legal-v3-module1-auth",
+  "version": "3.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "seed:users": "node scripts/create-initial-users.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "latest",
     "@vitejs/plugin-react": "latest",
     "vite": "latest",
     "react": "latest",
-    "react-dom": "latest"
-  },
-  "devDependencies": {}
+    "react-dom": "latest",
+    "dotenv": "latest"
+  }
 }
